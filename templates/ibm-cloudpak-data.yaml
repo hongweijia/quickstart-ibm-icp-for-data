@@ -433,92 +433,18 @@ Parameters:
 Mappings:
 
   AWSAMIRegionMap:
-    eu-central-1:
+    cn-northwest-1:
       RHEL76HVM: ami-062dacb006c5860f9
       COREOS: ami-0ceea534b63224411
-    ap-southeast-2:
-      RHEL76HVM: ami-0f1ef883e90ca71c0
-      COREOS: ami-08929f33bfab49b83
-    eu-west-1:
-      RHEL76HVM: ami-0a0d2dc2f521ddce6
-      COREOS: ami-0e95125b57fa63b0d
-    us-east-1:
-      RHEL76HVM: ami-0916c408cb02e310b
-      COREOS: ami-06f85a7940faa3217
-    us-east-2:
-      RHEL76HVM: ami-03cfe750d5ea278f5
-      COREOS: ami-04a79d8d7cfa540cc
-    us-west-2:
-      RHEL76HVM: ami-04b7963c90686dd4c
-      COREOS: ami-0d231993dddc5cd2e
-    ap-northeast-1:
-      RHEL76HVM: ami-0dc41c7805e171046
-      COREOS: ami-023d0452866845125
-    eu-west-2:
-      RHEL76HVM: ami-096fbd31de0375d2a
-      COREOS: ami-0eef98c447b85ffcd
-    eu-west-3:
-      RHEL76HVM: ami-025fb013ee01513b5
-      COREOS: ami-0049e16104f360df6
-    ap-southeast-1:
-      RHEL76HVM: ami-07cafca3788493264
-      COREOS:  ami-086b93722336bd1d9
-    eu-north-1:
-      RHEL76HVM: ami-75941f0b
-      COREOS: ami-06b7087b2768f644a
-    ap-south-1:
-      RHEL76HVM: ami-021912f2c8d2c70c9
-      COREOS: ami-0bf62e963a473068e
-    ap-northeast-2:
-      RHEL76HVM: ami-0b5425629eb18a008
-      COREOS: ami-0ba4f9a0358bcb44a
-    sa-east-1:
-      RHEL76HVM: ami-048b2348ac2ccfc53
-      COREOS: ami-0c80d785b30eef121
-    ca-central-1:
-      RHEL76HVM: ami-05816666b3178f208
-      COREOS: ami-0f6d943a1fa9172fd
-    us-west-1:
-      RHEL76HVM: ami-0388d197bb42be9be
-      COREOS: ami-0633b392e8eff25e7
-
+  
 
 
   AWSRegionS3Bucket:
-    ap-northeast-1:
-      ICPDArchiveBucket: ibm-cloud-private-data-ap-northeast-1
-    ap-northeast-2:
-      ICPDArchiveBucket: ibm-cloud-private-data-ap-northeast-2
-    ap-northeast-3:
-      ICPDArchiveBucket: ibm-cloud-private-data-ap-northeast-3
-    ap-south-1:
-      ICPDArchiveBucket: ibm-cloud-private-data-ap-south-1
-    ap-southeast-1:
-      ICPDArchiveBucket: ibm-cloud-private-data-ap-southeast-1
-    ap-southeast-2:
-      ICPDArchiveBucket: ibm-cloud-private-data-ap-southeast-2
-    ca-central-1:
-      ICPDArchiveBucket: ibm-cloud-private-data-ca-central-1
-    eu-central-1:
-      ICPDArchiveBucket: ibm-cloud-private-data-eu-central-1
-    eu-north-1:
-      ICPDArchiveBucket: ibm-cloud-private-data-eu-north-1
-    eu-west-1:
-      ICPDArchiveBucket: ibm-cloud-private-data-eu-west-1
-    eu-west-2:
-      ICPDArchiveBucket: ibm-cloud-private-data-eu-west-2
-    eu-west-3:
-      ICPDArchiveBucket: ibm-cloud-private-data-eu-west-3
-    sa-east-1:
-      ICPDArchiveBucket: ibm-cloud-private-data-sa-east-1
-    us-east-1:
-      ICPDArchiveBucket: ibm-cloud-private-data-us-east-1
-    us-east-2:
-      ICPDArchiveBucket: ibm-cloud-private-data-us-east-2
-    us-west-1:
-      ICPDArchiveBucket: ibm-cloud-private-data-us-west-1
-    us-west-2:
-      ICPDArchiveBucket: ibm-cloud-private-data-us-west-2    
+    cn-northwest-1:
+      ICPDArchiveBucket: ibm-cloud-private-data-cn-northwest-1
+      
+      
+      
 Rules:
  
   LicenseAgreementRule:
