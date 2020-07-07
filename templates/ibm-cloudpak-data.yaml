@@ -474,7 +474,7 @@ Resources:
     Type: 'AWS::IAM::User'
     Properties:
       ManagedPolicyArns:
-        - arn:aws:iam::aws:policy/AdministratorAccess
+        - arn:aws-cn:iam::aws:policy/AdministratorAccess
 
   CPDIAMUserAccessKey:
     Type: 'AWS::IAM::AccessKey'
@@ -521,8 +521,8 @@ Resources:
               Service: lambda.amazonaws.com
             Action: sts:AssumeRole
       ManagedPolicyArns:
-        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
-        - arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM
+        - arn:aws-cn:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+        - arn:aws-cn:iam::aws:policy/service-role/AmazonEC2RoleforSSM
       Path: /
       Policies:
         - PolicyName: lambda-cleanUpLambda
@@ -557,8 +557,8 @@ Resources:
           - "sts:AssumeRole"
       Path: "/"
       ManagedPolicyArns:
-        - arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM
-        - arn:aws:iam::aws:policy/AWSCloudFormationReadOnlyAccess
+        - arn:aws-cn:iam::aws:policy/service-role/AmazonEC2RoleforSSM
+        - arn:aws-cn:iam::aws:policy/AWSCloudFormationReadOnlyAccess
       Policies:
       - PolicyName: bootnode-policy
         PolicyDocument:
@@ -588,10 +588,10 @@ Resources:
             - !Ref OpenshiftSecret
           - Effect: "Allow"
             Action: "s3:ListBucket"
-            Resource: !Sub arn:aws:s3:::${ICPDDeploymentLogsBucketName}
+            Resource: !Sub arn:aws-cn:s3:::${ICPDDeploymentLogsBucketName}
           - Effect: "Allow"
             Action: "s3:PutObject"
-            Resource: !Sub arn:aws:s3:::${ICPDDeploymentLogsBucketName}/*
+            Resource: !Sub arn:aws-cn:s3:::${ICPDDeploymentLogsBucketName}/*
           - Effect: Allow
             Action:
             - ssm:SendCommand
