@@ -5,7 +5,7 @@ Metadata:
     Filters:
       RHEL76HVM:
         name: RHEL-7.6_HVM_GA-20??????-x86_64-0-Hourly2-GP2
-        owner-id: "309956199498"
+        owner-id: "841258680906"
         architecture: x86_64
         virtualization-type: hvm
   AWS::CloudFormation::Interface:
@@ -434,8 +434,8 @@ Mappings:
 
   AWSAMIRegionMap:
     cn-northwest-1:
-      RHEL76HVM: ami-062dacb006c5860f9
-      COREOS: ami-0ceea534b63224411
+      RHEL76HVM: ami-05ccd5cd6d75c2346
+      COREOS: ami-0782c5d4029140db7
   
 
 
