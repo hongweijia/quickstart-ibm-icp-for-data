@@ -459,11 +459,11 @@ Resources:
       TemplateURL: !If
           - 3AZCondition
           - !Sub
-            - https://${S3Bucket}.s3.${S3Region}.${AWS::URLSuffix}/${QSS3KeyPrefix}submodules/quickstart-aws-vpc/templates/aws-vpc.template
+            - https://cpd-quickstart.s3.cn-northwest-1.amazonaws.com.cn/quickstart-ibm-icp-for-data/submodules/quickstart-aws-vpc/templates/aws-vpc.template
             - S3Bucket: !If [UsingDefaultBucket, !Sub '${QSS3BucketName}-${AWS::Region}', !Ref QSS3BucketName]
               S3Region: !If [UsingDefaultBucket, !Ref 'AWS::Region', !Ref QSS3BucketRegion]
           - !Sub
-            - https://${S3Bucket}.s3.${S3Region}.${AWS::URLSuffix}/${QSS3KeyPrefix}templates/aws-vpc.yaml
+            - https://cpd-quickstart.s3.cn-northwest-1.amazonaws.com.cn/quickstart-ibm-icp-for-data/templates/aws-vpc.yaml
             - S3Bucket: !If [UsingDefaultBucket, !Sub '${QSS3BucketName}-${AWS::Region}', !Ref QSS3BucketName]
               S3Region: !If [UsingDefaultBucket, !Ref 'AWS::Region', !Ref QSS3BucketRegion] 
       Parameters:
