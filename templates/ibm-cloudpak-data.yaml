@@ -498,7 +498,7 @@ Resources:
     Properties:
       TemplateURL: !Sub 
         - >- 
-          https://${S3Bucket}.s3.${S3Region}.${AWS::URLSuffix}/${QSS3KeyPrefix}templates/shared-storage.yaml
+          https://cpd-quickstart.s3.cn-northwest-1.amazonaws.com.cn/quickstart-ibm-icp-for-data/templates/shared-storage.yaml
         - S3Bucket: !If [UsingDefaultBucket, !Sub '${QSS3BucketName}-${AWS::Region}', !Ref QSS3BucketName]
           S3Region: !If [UsingDefaultBucket, !Ref 'AWS::Region', !Ref QSS3BucketRegion]
       Parameters:
@@ -576,7 +576,7 @@ Resources:
           - Effect: "Allow"
             Action: "s3:GetObject"
             Resource: !Sub
-              - arn:${AWS::Partition}:s3:::${S3Bucket}/${QSS3KeyPrefix}*
+              - arn:aws-cn:s3:::${S3Bucket}/${QSS3KeyPrefix}*
               - S3Bucket: !If [UsingDefaultBucket, !Sub '${QSS3BucketName}-${AWS::Region}', !Ref QSS3BucketName]
           - Effect: "Allow"
             Action:

@@ -100,4 +100,4 @@ Outputs:
         - - !Ref ClusterSharedStorage
           - efs
           - !Ref AWS::Region
-          - amazonaws.com
+          - amazonaws.com.cn
